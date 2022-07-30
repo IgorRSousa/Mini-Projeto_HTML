@@ -1,0 +1,2 @@
+Projeto de site de noticias iniciante apenas HTML e CSS sem JavaScript. Projeto baseado no materia do Guanabara(https://www.youtube.com/c/CursoemV%C3%ADdeo).
+Para visualizar baixe os aquivos em uma pasta e execute o arquivo.html

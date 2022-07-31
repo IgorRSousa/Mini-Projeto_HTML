@@ -8,6 +8,13 @@
     src: url(fontes/idroid.otf);
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+  }
+
 :root{
     --cor0: #98EEC2;
     --cor1: #50EB9B;
@@ -25,16 +32,107 @@ body{
 
 header{
     background-image: linear-gradient(to bottom,var(--cor1), var(--cor3) 85%);
-    height: 220px;
+    height: 225px;
 }
 
 h1{
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-family: var(--fonte2);
+    font-size: 23px;
+    color: var(--cor3);
+}
+
+nav{
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    min-width: 400px;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+h2{
+    width: 600px;
+    margin-left: 15px;
+    padding-left: 5px;
+    font-family: var(--fonte2);
+    font-size: 18px;
+    color: var(--cor3);
+    background-image: linear-gradient(to right, #3eb8796c, white);
+}
+
+aside{
+    background-color: #83E1AD;
+    margin: 25px;
+    border-radius: 25px;
+}
+
+h3{
+    color: white;
+    background-color: var(--cor3);
+    border-radius: 25px 25px 0 0;
+    padding: 15px;
+    font-family: var(--fonte0);
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    list-style-position: inside;
+    columns: 2;
+    padding: 20px;
+}
+li{
+    font-family: var(--fonte0);
+}
+
+footer{
+    background-color: var(--cor4);
+    font-family: var(--fonte0);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.459);
+}
+
+.video{
+    position: relative;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.img{
+    text-align: center;
+}
+
+#tituloPagina{
     padding-top: 40px;
     text-align: center;
     font-family: var(--fonte1);
     color: white;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.459);
-    font-size: 40px;
+    font-size: 42px;
     
 }
 
@@ -44,8 +142,18 @@ h1{
     color: white;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.459);
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 14px;
     
+}
+
+.linkCorp{
+    background-color: #50eb9b8f;
+    color: var(--cor3);
+    font-family: var(--fonte0);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 5px;
 }
 
 .linkNav{
@@ -53,35 +161,33 @@ h1{
     color: white;
     font-family: var(--fonte0);
     font-weight: bold;
-    
+    padding-right: 15px;
 }
+
+.linkNav:hover{color: lightgray;}
 
 .lineNav{
     display: inline;
-    margin-right: 20px;
-    
-}
-
-section{
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 400px;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
-}
-
-h2{
-    margin-top: 0px;
-    padding-left: 20px;
-    padding-top: 25px;
-    font-family: var(--fonte2);
-    font-size: 23px;
-    color: var(--cor3);
-    background-color: white;
+    margin: 0px 10px 10px 10px;
 }
 
 .textCorp{
     padding: 15px 20px;
     text-align: justify;
+    font-family: var(--fonte0);
+    line-height: 1.5;
 }
+
+.textExtra{
+    padding: 15px 20px;
+    text-align: justify;
+    font-family: var(--fonte0);
+    line-height: 1.5;   
+}
+
+.linkRef{
+    text-decoration: none;
+    color: white;
+}
+
+.linkRef:hover{color: var(--cor1); text-decoration: underline;} 
